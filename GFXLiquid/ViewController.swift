@@ -34,11 +34,12 @@ class ViewController: UIViewController {
         self.view.addSubview(skView)
         
         // create walls
-        self.createWalls()
-        
+        self.scene.physicsBody = SKPhysicsBody(edgeLoopFrom: self.view.frame)
+
         // add node(s)
-        for _ in 0..<50 {
-            self.scene.addChild(self.addShapeNode(withRadius: 42))
+        for _ in 0..<80 {
+            let radius = arc4random_uniform(40) + 30
+            self.scene.addChild(self.addShapeNode(withRadius: CGFloat(radius)))
         }
        
         self.scene.filter = MetaBallFilter()
@@ -48,7 +49,15 @@ class ViewController: UIViewController {
         self.scene.physicsWorld.gravity = CGVector(dx: 0.0, dy: 0.0)
         
         self.radialGravity.strength = 0.5
-        self.dragField.strength = 0.8
+        self.dragField.strength = 0.1
+        
+        // initial position
+        
+        self.radialGravity.falloff = 1.0
+        self.radialGravity.region = SKRegion(radius: 568)
+        self.radialGravity.position = CGPoint(x: 200, y: 200)
+//        self.radialGravity.position = CGPoint(x: self.skView.frame.midX, y: self.skView.frame.midY)
+        
         
         // add field nodes
         self.scene.addChild(self.radialGravity)
@@ -68,8 +77,12 @@ class ViewController: UIViewController {
         
         // node properties
         node.fillColor = UIColor.cyan
-        node.strokeColor = node.fillColor
-       
+        node.strokeColor = UIColor.clear
+
+//        let texture = SKTexture(rect: node.frame, firstColor: UIColor.cyan, lastColor: UIColor.clear)
+//        
+//        node.fillTexture = texture
+        
         /*
         *   Node Physics Body
         */
@@ -109,28 +122,6 @@ class ViewController: UIViewController {
         return node
     }
     
-    func createWalls() {
-        let left = SKShapeNode(rectOf: CGSize(width: 2, height: view.frame.height))
-        left.position = CGPoint(x: 2, y: view.frame.height / 2)
-        left.physicsBody = getPhysicsBody(ofSize: CGSize(width: 2, height: view.frame.height))
-        self.scene.addChild(left)
-        
-        let right = SKShapeNode(rectOf: CGSize(width: 2, height: view.frame.height))
-        right.position = CGPoint(x: view.frame.width-2, y: view.frame.height / 2)
-        right.physicsBody = getPhysicsBody(ofSize: CGSize(width: 2, height: view.frame.height))
-        self.scene.addChild(right)
-        
-        let floor = SKShapeNode(rectOf: CGSize(width: view.frame.width, height: 2))
-        floor.position = CGPoint(x: view.frame.width / 2, y: 2)
-        floor.physicsBody = getPhysicsBody(ofSize: CGSize(width: view.frame.width, height: 2))
-        self.scene.addChild(floor)
-        
-        let roof = SKShapeNode(rectOf: CGSize(width: view.frame.width, height: 2))
-        roof.position = CGPoint(x: view.frame.width / 2, y: view.frame.height - 2)
-        roof.physicsBody = getPhysicsBody(ofSize: CGSize(width: view.frame.width, height: 2))
-        self.scene.addChild(roof)
-    }
-
     func getPhysicsBody(ofSize size: CGSize) -> SKPhysicsBody {
         
         let body = SKPhysicsBody(rectangleOf: size)
@@ -154,17 +145,14 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-    
     // set gravity based on force touch
     func setGravity(forTouch touch: UITouch) {
         
-        
-        self.radialGravity.falloff = 1.0
-        self.radialGravity.region = SKRegion(radius: 568)
+        // append force touch strength
         self.radialGravity.strength = (traitCollection.forceTouchCapability == UIForceTouchCapability.available) ? Float(touch.force / touch.maximumPossibleForce) * 6 : 3
         
-        //
-        self.radialGravity.position = CGPoint(x: touch.location(in: skView).x, y: view.frame.height-touch.location(in: skView).y)
+        // move position
+        self.radialGravity.position = CGPoint(x: touch.location(in: self.skView).x, y: view.frame.height-touch.location(in: self.skView).y)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

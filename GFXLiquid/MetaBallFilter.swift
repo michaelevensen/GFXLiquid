@@ -12,6 +12,8 @@ class MetaBallFilter: CIFilter {
 
     var inputImage: CIImage?
     let gradient = CIImage(image: UIImage(named: "gradient_overlay.png")!)!
+//    let gradient = CIImage(image: UIImage(named: "gradient_overlay_rainbow.png")!)!
+//    let gradient = CIImage(image: UIImage(named: "gradient_overlay_color.png")!)!
     
     override var outputImage: CIImage? {
         guard let inputImage = inputImage else { return nil	}
@@ -19,7 +21,7 @@ class MetaBallFilter: CIFilter {
         let blur = CIFilter(name: "CIGaussianBlur")!
         let map = CIFilter(name: "CIColorMap")!
         
-        // note: radius has to be half of the node size for this effect to work
+        // note: radius has to be one value, and preferably half the size of the nodes
         let radius = 20
         blur.setValue(radius, forKey: kCIInputRadiusKey)
         blur.setValue(inputImage, forKey: kCIInputImageKey)
@@ -28,5 +30,6 @@ class MetaBallFilter: CIFilter {
         map.setValue(blur.outputImage, forKey: kCIInputImageKey)
         map.setValue(self.gradient, forKey: kCIInputGradientImageKey)
         return map.outputImage
+//        return blur.outputImage
     }
 }
