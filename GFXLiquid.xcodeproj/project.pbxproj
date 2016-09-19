@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EAD19881D90539F00771162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19871D90539F00771162 /* AppDelegate.swift */; };
+		9EAD198D1D90539F00771162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD198B1D90539F00771162 /* Main.storyboard */; };
+		9EAD198F1D90539F00771162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD198E1D90539F00771162 /* Assets.xcassets */; };
+		9EAD19921D90539F00771162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD19901D90539F00771162 /* LaunchScreen.storyboard */; };
+		9EAD199D1D90539F00771162 /* GFXLiquidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD199C1D90539F00771162 /* GFXLiquidTests.swift */; };
+		9EAD19A81D90539F00771162 /* GFXLiquidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19A71D90539F00771162 /* GFXLiquidUITests.swift */; };
+		9EAD19B81D9053AA00771162 /* gradient_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD19B51D9053AA00771162 /* gradient_overlay.png */; };
+		9EAD19B91D9053AA00771162 /* MetaBallFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */; };
+		9EAD19BA1D9053AA00771162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19B71D9053AA00771162 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EAD19991D90539F00771162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EAD197C1D90539F00771162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EAD19831D90539F00771162;
+			remoteInfo = GFXLiquid;
+		};
+		9EAD19A41D90539F00771162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EAD197C1D90539F00771162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EAD19831D90539F00771162;
+			remoteInfo = GFXLiquid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EAD19841D90539F00771162 /* GFXLiquid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFXLiquid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAD19871D90539F00771162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EAD198C1D90539F00771162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EAD198E1D90539F00771162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EAD19911D90539F00771162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EAD19931D90539F00771162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAD19981D90539F00771162 /* GFXLiquidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFXLiquidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAD199C1D90539F00771162 /* GFXLiquidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFXLiquidTests.swift; sourceTree = "<group>"; };
+		9EAD199E1D90539F00771162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAD19A31D90539F00771162 /* GFXLiquidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFXLiquidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAD19A71D90539F00771162 /* GFXLiquidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFXLiquidUITests.swift; sourceTree = "<group>"; };
+		9EAD19A91D90539F00771162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAD19B51D9053AA00771162 /* gradient_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay.png; sourceTree = "<group>"; };
+		9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaBallFilter.swift; sourceTree = "<group>"; };
+		9EAD19B71D9053AA00771162 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EAD19811D90539F00771162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAD19951D90539F00771162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAD19A01D90539F00771162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EAD197B1D90539F00771162 = {
+			isa = PBXGroup;
+			children = (
+				9EAD19861D90539F00771162 /* GFXLiquid */,
+				9EAD199B1D90539F00771162 /* GFXLiquidTests */,
+				9EAD19A61D90539F00771162 /* GFXLiquidUITests */,
+				9EAD19851D90539F00771162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EAD19851D90539F00771162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EAD19841D90539F00771162 /* GFXLiquid.app */,
+				9EAD19981D90539F00771162 /* GFXLiquidTests.xctest */,
+				9EAD19A31D90539F00771162 /* GFXLiquidUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EAD19861D90539F00771162 /* GFXLiquid */ = {
+			isa = PBXGroup;
+			children = (
+				9EAD19BB1D9053AD00771162 /* Resources */,
+				9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */,
+				9EAD19B71D9053AA00771162 /* ViewController.swift */,
+				9EAD198B1D90539F00771162 /* Main.storyboard */,
+				9EAD198E1D90539F00771162 /* Assets.xcassets */,
+			);
+			path = GFXLiquid;
+			sourceTree = "<group>";
+		};
+		9EAD199B1D90539F00771162 /* GFXLiquidTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EAD199C1D90539F00771162 /* GFXLiquidTests.swift */,
+				9EAD199E1D90539F00771162 /* Info.plist */,
+			);
+			path = GFXLiquidTests;
+			sourceTree = "<group>";
+		};
+		9EAD19A61D90539F00771162 /* GFXLiquidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EAD19A71D90539F00771162 /* GFXLiquidUITests.swift */,
+				9EAD19A91D90539F00771162 /* Info.plist */,
+			);
+			path = GFXLiquidUITests;
+			sourceTree = "<group>";
+		};
+		9EAD19BB1D9053AD00771162 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9EAD19901D90539F00771162 /* LaunchScreen.storyboard */,
+				9EAD19931D90539F00771162 /* Info.plist */,
+				9EAD19871D90539F00771162 /* AppDelegate.swift */,
+				9EAD19B51D9053AA00771162 /* gradient_overlay.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EAD19831D90539F00771162 /* GFXLiquid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAD19AC1D90539F00771162 /* Build configuration list for PBXNativeTarget "GFXLiquid" */;
+			buildPhases = (
+				9EAD19801D90539F00771162 /* Sources */,
+				9EAD19811D90539F00771162 /* Frameworks */,
+				9EAD19821D90539F00771162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GFXLiquid;
+			productName = GFXLiquid;
+			productReference = 9EAD19841D90539F00771162 /* GFXLiquid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EAD19971D90539F00771162 /* GFXLiquidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAD19AF1D90539F00771162 /* Build configuration list for PBXNativeTarget "GFXLiquidTests" */;
+			buildPhases = (
+				9EAD19941D90539F00771162 /* Sources */,
+				9EAD19951D90539F00771162 /* Frameworks */,
+				9EAD19961D90539F00771162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EAD199A1D90539F00771162 /* PBXTargetDependency */,
+			);
+			name = GFXLiquidTests;
+			productName = GFXLiquidTests;
+			productReference = 9EAD19981D90539F00771162 /* GFXLiquidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EAD19A21D90539F00771162 /* GFXLiquidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAD19B21D90539F00771162 /* Build configuration list for PBXNativeTarget "GFXLiquidUITests" */;
+			buildPhases = (
+				9EAD199F1D90539F00771162 /* Sources */,
+				9EAD19A01D90539F00771162 /* Frameworks */,
+				9EAD19A11D90539F00771162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EAD19A51D90539F00771162 /* PBXTargetDependency */,
+			);
+			name = GFXLiquidUITests;
+			productName = GFXLiquidUITests;
+			productReference = 9EAD19A31D90539F00771162 /* GFXLiquidUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EAD197C1D90539F00771162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Michael Nino Evensen";
+				TargetAttributes = {
+					9EAD19831D90539F00771162 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9CV8MBD695;
+						ProvisioningStyle = Automatic;
+					};
+					9EAD19971D90539F00771162 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9CV8MBD695;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EAD19831D90539F00771162;
+					};
+					9EAD19A21D90539F00771162 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9CV8MBD695;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EAD19831D90539F00771162;
+					};
+				};
+			};
+			buildConfigurationList = 9EAD197F1D90539F00771162 /* Build configuration list for PBXProject "GFXLiquid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EAD197B1D90539F00771162;
+			productRefGroup = 9EAD19851D90539F00771162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EAD19831D90539F00771162 /* GFXLiquid */,
+				9EAD19971D90539F00771162 /* GFXLiquidTests */,
+				9EAD19A21D90539F00771162 /* GFXLiquidUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EAD19821D90539F00771162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAD19921D90539F00771162 /* LaunchScreen.storyboard in Resources */,
+				9EAD198F1D90539F00771162 /* Assets.xcassets in Resources */,
+				9EAD19B81D9053AA00771162 /* gradient_overlay.png in Resources */,
+				9EAD198D1D90539F00771162 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAD19961D90539F00771162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAD19A11D90539F00771162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EAD19801D90539F00771162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAD19B91D9053AA00771162 /* MetaBallFilter.swift in Sources */,
+				9EAD19BA1D9053AA00771162 /* ViewController.swift in Sources */,
+				9EAD19881D90539F00771162 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAD19941D90539F00771162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAD199D1D90539F00771162 /* GFXLiquidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAD199F1D90539F00771162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAD19A81D90539F00771162 /* GFXLiquidUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EAD199A1D90539F00771162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EAD19831D90539F00771162 /* GFXLiquid */;
+			targetProxy = 9EAD19991D90539F00771162 /* PBXContainerItemProxy */;
+		};
+		9EAD19A51D90539F00771162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EAD19831D90539F00771162 /* GFXLiquid */;
+			targetProxy = 9EAD19A41D90539F00771162 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EAD198B1D90539F00771162 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EAD198C1D90539F00771162 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EAD19901D90539F00771162 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EAD19911D90539F00771162 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EAD19AA1D90539F00771162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EAD19AB1D90539F00771162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EAD19AD1D90539F00771162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9CV8MBD695;
+				INFOPLIST_FILE = GFXLiquid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.michaelevensen.GFXLiquid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9EAD19AE1D90539F00771162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9CV8MBD695;
+				INFOPLIST_FILE = GFXLiquid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.michaelevensen.GFXLiquid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9EAD19B01D90539F00771162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9CV8MBD695;
+				INFOPLIST_FILE = GFXLiquidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.michaelevensen.GFXLiquidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFXLiquid.app/GFXLiquid";
+			};
+			name = Debug;
+		};
+		9EAD19B11D90539F00771162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9CV8MBD695;
+				INFOPLIST_FILE = GFXLiquidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.michaelevensen.GFXLiquidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFXLiquid.app/GFXLiquid";
+			};
+			name = Release;
+		};
+		9EAD19B31D90539F00771162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9CV8MBD695;
+				INFOPLIST_FILE = GFXLiquidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.michaelevensen.GFXLiquidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GFXLiquid;
+			};
+			name = Debug;
+		};
+		9EAD19B41D90539F00771162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9CV8MBD695;
+				INFOPLIST_FILE = GFXLiquidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.michaelevensen.GFXLiquidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GFXLiquid;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EAD197F1D90539F00771162 /* Build configuration list for PBXProject "GFXLiquid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAD19AA1D90539F00771162 /* Debug */,
+				9EAD19AB1D90539F00771162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EAD19AC1D90539F00771162 /* Build configuration list for PBXNativeTarget "GFXLiquid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAD19AD1D90539F00771162 /* Debug */,
+				9EAD19AE1D90539F00771162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EAD19AF1D90539F00771162 /* Build configuration list for PBXNativeTarget "GFXLiquidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAD19B01D90539F00771162 /* Debug */,
+				9EAD19B11D90539F00771162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EAD19B21D90539F00771162 /* Build configuration list for PBXNativeTarget "GFXLiquidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAD19B31D90539F00771162 /* Debug */,
+				9EAD19B41D90539F00771162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EAD197C1D90539F00771162 /* Project object */;
+}
