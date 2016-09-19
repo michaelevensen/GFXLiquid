@@ -16,9 +16,10 @@
 		9EAD19B81D9053AA00771162 /* gradient_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD19B51D9053AA00771162 /* gradient_overlay.png */; };
 		9EAD19B91D9053AA00771162 /* MetaBallFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */; };
 		9EAD19BA1D9053AA00771162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19B71D9053AA00771162 /* ViewController.swift */; };
-		9EAD19BD1D9059CB00771162 /* gradient_overlay_rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD19BC1D9059CB00771162 /* gradient_overlay_rainbow.png */; };
-		9EAD19C11D905BBF00771162 /* gradient_overlay_color.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD19C01D905BBF00771162 /* gradient_overlay_color.png */; };
 		9EAD19C61D905F6B00771162 /* SKTexture+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19C51D905F6B00771162 /* SKTexture+Gradient.swift */; };
+		9EBF39691D9069F500D6A6AE /* gradient_overlay_color.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF39681D9069F500D6A6AE /* gradient_overlay_color.png */; };
+		9EBF396D1D906AE200D6A6AE /* gradient_overlay_rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF396C1D906AE200D6A6AE /* gradient_overlay_rainbow.png */; };
+		9EBF396F1D9070AF00D6A6AE /* gradient_overlay.pxm in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF396E1D9070AF00D6A6AE /* gradient_overlay.pxm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +55,10 @@
 		9EAD19B51D9053AA00771162 /* gradient_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay.png; sourceTree = "<group>"; };
 		9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaBallFilter.swift; sourceTree = "<group>"; };
 		9EAD19B71D9053AA00771162 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9EAD19BC1D9059CB00771162 /* gradient_overlay_rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay_rainbow.png; sourceTree = "<group>"; };
-		9EAD19C01D905BBF00771162 /* gradient_overlay_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay_color.png; sourceTree = "<group>"; };
 		9EAD19C51D905F6B00771162 /* SKTexture+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKTexture+Gradient.swift"; sourceTree = "<group>"; };
+		9EBF39681D9069F500D6A6AE /* gradient_overlay_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay_color.png; sourceTree = "<group>"; };
+		9EBF396C1D906AE200D6A6AE /* gradient_overlay_rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay_rainbow.png; sourceTree = "<group>"; };
+		9EBF396E1D9070AF00D6A6AE /* gradient_overlay.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = gradient_overlay.pxm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +112,8 @@
 				9EAD19C21D905C2300771162 /* Extensions */,
 				9EAD19BB1D9053AD00771162 /* Resources */,
 				9EAD19B51D9053AA00771162 /* gradient_overlay.png */,
-				9EAD19BC1D9059CB00771162 /* gradient_overlay_rainbow.png */,
-				9EAD19C01D905BBF00771162 /* gradient_overlay_color.png */,
+				9EBF396C1D906AE200D6A6AE /* gradient_overlay_rainbow.png */,
+				9EBF39681D9069F500D6A6AE /* gradient_overlay_color.png */,
 				9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */,
 				9EAD19B71D9053AA00771162 /* ViewController.swift */,
 				9EAD198B1D90539F00771162 /* Main.storyboard */,
@@ -141,6 +143,7 @@
 		9EAD19BB1D9053AD00771162 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9EBF396E1D9070AF00D6A6AE /* gradient_overlay.pxm */,
 				9EAD19901D90539F00771162 /* LaunchScreen.storyboard */,
 				9EAD19931D90539F00771162 /* Info.plist */,
 				9EAD19871D90539F00771162 /* AppDelegate.swift */,
@@ -266,12 +269,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAD19C11D905BBF00771162 /* gradient_overlay_color.png in Resources */,
+				9EBF39691D9069F500D6A6AE /* gradient_overlay_color.png in Resources */,
 				9EAD19921D90539F00771162 /* LaunchScreen.storyboard in Resources */,
-				9EAD19BD1D9059CB00771162 /* gradient_overlay_rainbow.png in Resources */,
 				9EAD198F1D90539F00771162 /* Assets.xcassets in Resources */,
 				9EAD19B81D9053AA00771162 /* gradient_overlay.png in Resources */,
 				9EAD198D1D90539F00771162 /* Main.storyboard in Resources */,
+				9EBF396F1D9070AF00D6A6AE /* gradient_overlay.pxm in Resources */,
+				9EBF396D1D906AE200D6A6AE /* gradient_overlay_rainbow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
