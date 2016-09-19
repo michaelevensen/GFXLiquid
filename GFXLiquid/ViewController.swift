@@ -77,7 +77,7 @@ class ViewController: UIViewController {
             
             // How much energy do we want the body to lose on a collision? 1.0 means all. The default is 0.2.
             let physics = SKPhysicsBody(polygonFrom: path)
-            physics.restitution = 1
+            physics.restitution = 0.5
 
             // add body
             node.physicsBody = physics
