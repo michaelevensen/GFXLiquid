@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9E7B74CF1D96D7210043F261 /* LiquidFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B74CE1D96D7210043F261 /* LiquidFilter.swift */; };
-		9E7B74D11D96E5E10043F261 /* StripesFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B74D01D96E5E10043F261 /* StripesFilter.swift */; };
 		9EAD19881D90539F00771162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19871D90539F00771162 /* AppDelegate.swift */; };
 		9EAD198D1D90539F00771162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD198B1D90539F00771162 /* Main.storyboard */; };
 		9EAD198F1D90539F00771162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD198E1D90539F00771162 /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		9E7B74CE1D96D7210043F261 /* LiquidFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidFilter.swift; sourceTree = "<group>"; };
-		9E7B74D01D96E5E10043F261 /* StripesFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripesFilter.swift; sourceTree = "<group>"; };
 		9EAD19841D90539F00771162 /* GFXLiquid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFXLiquid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAD19871D90539F00771162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EAD198C1D90539F00771162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				9E7B74CE1D96D7210043F261 /* LiquidFilter.swift */,
 				9EAD198B1D90539F00771162 /* Main.storyboard */,
 				9EAD198E1D90539F00771162 /* Assets.xcassets */,
-				9E7B74D01D96E5E10043F261 /* StripesFilter.swift */,
 			);
 			path = GFXLiquid;
 			sourceTree = "<group>";
@@ -282,7 +279,6 @@
 			files = (
 				9EAD19BA1D9053AA00771162 /* ViewController.swift in Sources */,
 				9EAD19881D90539F00771162 /* AppDelegate.swift in Sources */,
-				9E7B74D11D96E5E10043F261 /* StripesFilter.swift in Sources */,
 				9E7B74CF1D96D7210043F261 /* LiquidFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
