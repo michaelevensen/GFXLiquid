@@ -1,6 +1,6 @@
-![image](https://cloud.githubusercontent.com/assets/55974/18641494/36992322-7e9d-11e6-9dad-b12bda4d3822.png)
-
 # GFXLiquid
-- Example using a custom CIFilter to give SKShapeNode's a fluid effect.
+- Example using a custom `CIFilter` with `SpriteKit` (for physics), filter consists of a `CIGaussianBlur` and `CIColorMap` (for thresholding the blur, hard egdes) to give `SKShapeNode`'s a fluid effect.
+
+<img src="https://cloud.githubusercontent.com/assets/55974/18645988/cde9f29e-7eaf-11e6-9865-66a62cfdd9dd.gif" width="375">
 
 
