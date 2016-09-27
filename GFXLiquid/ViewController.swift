@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     let radialGravity = SKFieldNode.radialGravityField()
     let dragField = SKFieldNode.dragField()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,40 +28,44 @@ class ViewController: UIViewController {
     
         // AFAIK this is the "same" as addSubview()
         self.skView.presentScene(self.scene)
-        self.skView.backgroundColor = UIColor.black
+        self.scene.backgroundColor = UIColor.white
         
         // add view
         self.view.addSubview(skView)
         
         // create walls
         self.scene.physicsBody = SKPhysicsBody(edgeLoopFrom: self.view.frame)
-
-        // add node(s)
-        for _ in 0..<80 {
-            let radius = arc4random_uniform(40) + 30
-            self.scene.addChild(self.addShapeNode(withRadius: CGFloat(radius)))
-        }
-       
-        self.scene.filter = MetaBallFilter()
+        
+        // make nodes
+        self.makeNodes()
+    
+        // add filter
+        let filterColor = UIColor(red: 0.00, green: 0.34, blue: 0.93, alpha: 1.0)
         self.scene.shouldEnableEffects = true
+        self.scene.filter = LiquidFilter(blurRadius: 16, color: filterColor)
         
         // 0.0, -9.8 correspond with Earth's gravity.
-        self.scene.physicsWorld.gravity = CGVector(dx: 0.0, dy: 0.0)
+        self.scene.physicsWorld.gravity = CGVector.zero
         
         self.radialGravity.strength = 0.5
-        self.dragField.strength = 0.1
+        self.dragField.strength = 1.0
         
         // initial position
-        
         self.radialGravity.falloff = 1.0
-        self.radialGravity.region = SKRegion(radius: 568)
-        self.radialGravity.position = CGPoint(x: 200, y: 200)
-//        self.radialGravity.position = CGPoint(x: self.skView.frame.midX, y: self.skView.frame.midY)
-        
+        self.radialGravity.region = SKRegion(radius: 500)
+        self.radialGravity.position = self.view.center
         
         // add field nodes
         self.scene.addChild(self.radialGravity)
         self.scene.addChild(self.dragField)
+    }
+    
+    func makeNodes() {
+        // create nodes
+        for _ in 0..<100 {
+            let radius = arc4random_uniform(30) + 10 // from 10 to 20 (shouldn't be smaller than 10 to achieve liquid shape)
+            self.scene.addChild(self.addShapeNode(withRadius: CGFloat(radius)))
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -76,12 +80,8 @@ class ViewController: UIViewController {
         node.position = CGPoint(x: CGFloat(drand48()) * self.view.frame.width, y: CGFloat(drand48()) * self.view.frame.height)
         
         // node properties
-        node.fillColor = UIColor.cyan
-        node.strokeColor = UIColor.clear
-
-//        let texture = SKTexture(rect: node.frame, firstColor: UIColor.cyan, lastColor: UIColor.clear)
-//        
-//        node.fillTexture = texture
+        node.fillColor = UIColor.black // this has to be in contrast to the background
+        node.strokeColor = node.fillColor
         
         /*
         *   Node Physics Body
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
             
             // How much energy do we want the body to lose on a collision? 1.0 means all. The default is 0.2.
             let physics = SKPhysicsBody(polygonFrom: path)
-            physics.restitution = 0.5
+            physics.restitution = 0.25
 
             // add body
             node.physicsBody = physics
@@ -141,6 +141,22 @@ class ViewController: UIViewController {
         
         return body
     }
+    
+    // radial gravity strength
+    @IBAction func adjustRadialGravity(_ sender: UISlider) {
+        self.radialGravity.strength = min(max(sender.value, 1), 0)
+    }
+    // dragfield strength
+    @IBAction func adjustDragfieldStrength(_ sender: UISlider) {
+    }
+    
+    // radial gravity falloff
+    @IBAction func adjustRadialGravityFalloff(_ sender: UISlider) {
+    }
+    
+    // body restitution
+    @IBAction func adjustBodyRestitution(_ sender: UISlider) {
+    }
 }
 
 extension ViewController {
@@ -169,9 +185,3 @@ extension ViewController {
     }
 }
 
-/* UIColor Extension */
-extension UIColor {
-    func rand() -> UIColor {
-        return UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1)
-    }
-}

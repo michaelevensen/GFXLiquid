@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +18,92 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Radial Gravity Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzs-fw-h9h">
+                                <frame key="frameInset" minX="32" minY="385" width="267" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="bPv-05-tJp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Eks-h9-Eq3">
+                                <frame key="frameInset" minX="30" minY="409" width="314" height="31"/>
+                                <connections>
+                                    <action selector="adjustRadialGravity:" destination="BYZ-38-t0r" eventType="valueChanged" id="33H-ZQ-kBK"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Dragfield Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6r-c5-JV2">
+                                <frame key="frameInset" minX="32" minY="447" width="267" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="JCg-gv-u2C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mVV-JI-ttF">
+                                <frame key="frameInset" minX="30" minY="471" width="314" height="31"/>
+                                <connections>
+                                    <action selector="adjustDragfieldStrength:" destination="BYZ-38-t0r" eventType="valueChanged" id="l8h-fP-16a"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Radial Gravity Falloff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3p-ng-kjy">
+                                <frame key="frameInset" minX="32" minY="509" width="267" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="SLw-tf-MoF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UHX-fh-ztv">
+                                <frame key="frameInset" minX="30" minY="533" width="314" height="31"/>
+                                <connections>
+                                    <action selector="adjustRadialGravityFalloff:" destination="BYZ-38-t0r" eventType="valueChanged" id="HYO-Cl-OqS"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Body Restitution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c93-0Q-XEK">
+                                <frame key="frameInset" minX="32" minY="569" width="267" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="qsw-w6-OaK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Tx-3h-Org">
+                                <connections>
+                                    <action selector="adjustBodyRestitution:" destination="BYZ-38-t0r" eventType="valueChanged" id="BQE-9K-6T7"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fzs-fw-h9h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="2Oe-uU-hrA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Tx-3h-Org" secondAttribute="trailing" constant="15" id="5eo-Io-APP"/>
+                            <constraint firstItem="E6r-c5-JV2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="6Kw-2g-NLy"/>
+                            <constraint firstItem="Eks-h9-Eq3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Ft1-uL-IFY"/>
+                            <constraint firstItem="mVV-JI-ttF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Rp4-Va-0GA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Eks-h9-Eq3" secondAttribute="trailing" constant="15" id="TX8-oa-XyR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UHX-fh-ztv" secondAttribute="trailing" constant="15" id="Tim-4r-Mm8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Tx-3h-Org" secondAttribute="bottom" constant="40" id="UQO-JY-ABe"/>
+                            <constraint firstItem="c93-0Q-XEK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="bMx-47-XIx"/>
+                            <constraint firstItem="3Tx-3h-Org" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="bqA-KJ-m8l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mVV-JI-ttF" secondAttribute="trailing" constant="15" id="ckp-Ra-apd"/>
+                            <constraint firstItem="F3p-ng-kjy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="rb5-2O-mK2"/>
+                            <constraint firstItem="UHX-fh-ztv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="uuU-do-sFi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>

@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E7B74CF1D96D7210043F261 /* LiquidFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B74CE1D96D7210043F261 /* LiquidFilter.swift */; };
+		9E7B74D11D96E5E10043F261 /* StripesFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B74D01D96E5E10043F261 /* StripesFilter.swift */; };
 		9EAD19881D90539F00771162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19871D90539F00771162 /* AppDelegate.swift */; };
 		9EAD198D1D90539F00771162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD198B1D90539F00771162 /* Main.storyboard */; };
 		9EAD198F1D90539F00771162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD198E1D90539F00771162 /* Assets.xcassets */; };
 		9EAD19921D90539F00771162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD19901D90539F00771162 /* LaunchScreen.storyboard */; };
 		9EAD199D1D90539F00771162 /* GFXLiquidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD199C1D90539F00771162 /* GFXLiquidTests.swift */; };
 		9EAD19A81D90539F00771162 /* GFXLiquidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19A71D90539F00771162 /* GFXLiquidUITests.swift */; };
-		9EAD19B81D9053AA00771162 /* gradient_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD19B51D9053AA00771162 /* gradient_overlay.png */; };
-		9EAD19B91D9053AA00771162 /* MetaBallFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */; };
 		9EAD19BA1D9053AA00771162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19B71D9053AA00771162 /* ViewController.swift */; };
-		9EAD19C61D905F6B00771162 /* SKTexture+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD19C51D905F6B00771162 /* SKTexture+Gradient.swift */; };
-		9EBF39691D9069F500D6A6AE /* gradient_overlay_color.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF39681D9069F500D6A6AE /* gradient_overlay_color.png */; };
-		9EBF396D1D906AE200D6A6AE /* gradient_overlay_rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF396C1D906AE200D6A6AE /* gradient_overlay_rainbow.png */; };
 		9EBF396F1D9070AF00D6A6AE /* gradient_overlay.pxm in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF396E1D9070AF00D6A6AE /* gradient_overlay.pxm */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E7B74CE1D96D7210043F261 /* LiquidFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidFilter.swift; sourceTree = "<group>"; };
+		9E7B74D01D96E5E10043F261 /* StripesFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripesFilter.swift; sourceTree = "<group>"; };
 		9EAD19841D90539F00771162 /* GFXLiquid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFXLiquid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAD19871D90539F00771162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EAD198C1D90539F00771162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,12 +51,7 @@
 		9EAD19A31D90539F00771162 /* GFXLiquidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFXLiquidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAD19A71D90539F00771162 /* GFXLiquidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFXLiquidUITests.swift; sourceTree = "<group>"; };
 		9EAD19A91D90539F00771162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EAD19B51D9053AA00771162 /* gradient_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay.png; sourceTree = "<group>"; };
-		9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaBallFilter.swift; sourceTree = "<group>"; };
 		9EAD19B71D9053AA00771162 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9EAD19C51D905F6B00771162 /* SKTexture+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKTexture+Gradient.swift"; sourceTree = "<group>"; };
-		9EBF39681D9069F500D6A6AE /* gradient_overlay_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay_color.png; sourceTree = "<group>"; };
-		9EBF396C1D906AE200D6A6AE /* gradient_overlay_rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_overlay_rainbow.png; sourceTree = "<group>"; };
 		9EBF396E1D9070AF00D6A6AE /* gradient_overlay.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = gradient_overlay.pxm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,15 +103,12 @@
 		9EAD19861D90539F00771162 /* GFXLiquid */ = {
 			isa = PBXGroup;
 			children = (
-				9EAD19C21D905C2300771162 /* Extensions */,
 				9EAD19BB1D9053AD00771162 /* Resources */,
-				9EAD19B51D9053AA00771162 /* gradient_overlay.png */,
-				9EBF396C1D906AE200D6A6AE /* gradient_overlay_rainbow.png */,
-				9EBF39681D9069F500D6A6AE /* gradient_overlay_color.png */,
-				9EAD19B61D9053AA00771162 /* MetaBallFilter.swift */,
 				9EAD19B71D9053AA00771162 /* ViewController.swift */,
+				9E7B74CE1D96D7210043F261 /* LiquidFilter.swift */,
 				9EAD198B1D90539F00771162 /* Main.storyboard */,
 				9EAD198E1D90539F00771162 /* Assets.xcassets */,
+				9E7B74D01D96E5E10043F261 /* StripesFilter.swift */,
 			);
 			path = GFXLiquid;
 			sourceTree = "<group>";
@@ -149,14 +140,6 @@
 				9EAD19871D90539F00771162 /* AppDelegate.swift */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		9EAD19C21D905C2300771162 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9EAD19C51D905F6B00771162 /* SKTexture+Gradient.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,13 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EBF39691D9069F500D6A6AE /* gradient_overlay_color.png in Resources */,
 				9EAD19921D90539F00771162 /* LaunchScreen.storyboard in Resources */,
 				9EAD198F1D90539F00771162 /* Assets.xcassets in Resources */,
-				9EAD19B81D9053AA00771162 /* gradient_overlay.png in Resources */,
 				9EAD198D1D90539F00771162 /* Main.storyboard in Resources */,
 				9EBF396F1D9070AF00D6A6AE /* gradient_overlay.pxm in Resources */,
-				9EBF396D1D906AE200D6A6AE /* gradient_overlay_rainbow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAD19B91D9053AA00771162 /* MetaBallFilter.swift in Sources */,
 				9EAD19BA1D9053AA00771162 /* ViewController.swift in Sources */,
 				9EAD19881D90539F00771162 /* AppDelegate.swift in Sources */,
-				9EAD19C61D905F6B00771162 /* SKTexture+Gradient.swift in Sources */,
+				9E7B74D11D96E5E10043F261 /* StripesFilter.swift in Sources */,
+				9E7B74CF1D96D7210043F261 /* LiquidFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
